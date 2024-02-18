@@ -52,7 +52,7 @@ def hide_turtle():
 #aşağıdaki koda gerek kalmadı çünkü random.choice diye bir şey varmış
 #turtleNumber = len(turtleList)
 def showTurtleRandomly():
-    if gameOver == True:
+    if gameOver == False:
         hide_turtle()
         random.choice(turtleList).showturtle()
         screen.ontimer(showTurtleRandomly, 750)
